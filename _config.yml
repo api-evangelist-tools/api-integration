@@ -17,7 +17,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md",".
 github_user: api-evangelist-tools
 github_repo: api-integration
 
-production_url : http://openapi.toolbox.apievangelist.com
+production_url : http://api.integration.tool.apievangelist.com
 
 image : http://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png
 imagesecure : https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png
