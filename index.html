@@ -1,0 +1,26 @@
+---
+layout: default
+title: OpenAPI Toolbox
+---
+
+<h1>API Integrations</h1>
+<p>This is a sample data driven API integrations page that is hosted on Github, making it something that any API provider can fork and easily put to use, showing the possible integrations with other APIs available when you use their APIs.</p>
+<p>Here are the sample integrations listing page showing what is possible:</p>
+<table cellpadding="3" cellspacing="2">
+{% for tool in site.data.integrations %}
+    <tr>
+      <td width="125" valign="top"><img src="{{ tool.image }}" align="left" width="125" style="padding: 15px;" /></td>
+      <td style="padding: 10px;" valign="top">
+        <p><a href="{{ tool.url }}"><strong>{{ tool.title }}</strong></a><br />
+        {{ tool.details }}</p>
+        <ul>
+          <li><strong>URL:</strong> <a href="{{ tool.url }}" target="_blank">Visit</a></li>
+        </ul>
+        <p align="center"><strong>Category:</strong> {{ tootle.category }}</p>
+        <p align="center"><strong>Brand:</strong> {{ tootle.brand }}</p>
+        <hr style="width: 75%; text-align:left;" />
+      </td>
+    </tr>
+{% endfor %}
+</table>
+<p>This project is <a href="https://github.com/kinlane/openapi-toolbox">forkable using the Github repository</a>, and <a href="/data/tools.json">accessible as JSON</a>. If you have a tool you think should be added, or there is something that needs fixing, <a href="https://github.com/kinlane/openapi-toolbox/issues">you can submit an issue on the Github repository</a>, or submit a pull request.</p>
