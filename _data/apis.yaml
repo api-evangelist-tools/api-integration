@@ -2,32 +2,23 @@ name: API Integrations
 description: A sample API integration page showing other integrations available with an API.
 image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-tools.png
 tags:
-  - OpenAPI
-  - Documentation
-  - Editors
-  - Generators
-  - Servers
-  - Clients
+  - API
+  - Integrations
 created: "2017-05-09"
 modified: "2017-05-09"
-url: https://raw.githubusercontent.com/kinlane/openapi-toolbox/master/_data/apis.yaml
+url: https://raw.githubusercontent.com/api-evangelist-tools/api-integration/master/_data/apis.yaml
 specificationVersion: "0.14"
 apis:
-  - name: OpenAPI Toolbox API
-    description: Machine readable access to the code and definitions in the OpenAPI Toolbox.
-    image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-tools.png
-    humanURL: http://openapi.toolbox.apievangelist.com/
+  - name: API Integrations API
+    description: Machine readable access to the API integrations available via this platform.
+    image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-integration-automation.png
+    humanURL: http://api.integration.tool.apievangelist.com/
     baseURL: http://openapi.toolbox.apievangelist.com/
-    tags:
-      - OpenAPI
-      - Documentation
-      - Editors
-      - Generators
-      - Servers
-      - Clients
+  - API
+  - Integrations
     properties:
       - type: x-openapi
-        url: https://raw.githubusercontent.com/kinlane/openapi-toolbox/master/_data/openapi.yaml
+        url: https://raw.githubusercontent.com/api-evangelist-tools/api-integration/master/_data/openapi.yaml
 x-common:
   - type: x-support
     url: https://github.com/api-evangelist-tools/api-integration/issues

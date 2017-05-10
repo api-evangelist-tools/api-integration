@@ -104,6 +104,9 @@ definitions:
       image:
         description: An image representation for an integration.
         type: string
+      image:
+        description: An image width for the integration.
+        type: integer        
       category:
         description: A category for the integration.
         type: string
