@@ -1,64 +1,93 @@
-- title: Twitter
-  identifier: https://twitter.com
-  url: https://twitter.com
-  details: >-
-    Twitter is an online news and social networking service where users post and interact with messages, tweets, restricted to 140 characters.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/266_logo.png
+- name: Twitter
+  identifier: 'https://twitter.com'
+  url: 'https://twitter.com'
+  description: >-
+    Twitter is an online news and social networking service where users post and
+    interact with messages, tweets, restricted to 140 characters.
+  image: >-
+    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/266_logo.png
+  imagewidth: '125'
   category: Social
   brand: Twitter
-- title: Facebook
-  identifier: https://facebook.com
-  url: https://facebook.com
-  details: >-
-    Facebook is an American for-profit corporation and an online social media and social networking service based in Menlo Park, California.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Facebook.png
+- name: Facebook
+  identifier: 'https://facebook.com'
+  url: 'https://facebook.com'
+  description: >-
+    Facebook is an American for-profit corporation and an online social media
+    and social networking service based in Menlo Park, California.
+  image: >-
+    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Facebook.png
+  imagewidth: '150'
   category: Social
   brand: Facebook
-- title: Dropbox
-  identifier: https://dropbox.com
-  url: https://dropbox.com
-  details: >-
-    Dropbox simplifies the way you create, share and collaborate. Bring your photos, docs, and videos anywhere and keep your files safe.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Facebook.png
+- name: Dropbox
+  identifier: 'https://dropbox.com'
+  url: 'https://dropbox.com'
+  description: >-
+    Dropbox simplifies the way you create, share and collaborate. Bring your
+    photos, docs, and videos anywhere and keep your files safe.
+  image: >-
+    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/DropboxSlackbotDropboxSlackbot.png
+  imagewidth: '150'
   category: Storage
   brand: Dropbox
-- title: Google Drive
-  identifier: https://www.google.com/drive/
-  url: https://www.google.com/drive/
-  details: >-
-    Google Drive is a file storage and synchronization service operated by Google. It allows users to store files in the cloud, synchronize files across devices, and share files. Google Drive encompasses Google Docs, Sheets and Slides, an office suite that permits collaborative editing of documents, spreadsheets, presentations, drawings, forms, and more.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-drive-icon.png
+- name: Google Drive
+  identifier: 'https://www.google.com/drive/'
+  url: 'https://www.google.com/drive/'
+  description: >-
+    Google Drive is a file storage and synchronization service operated by
+    Google. It allows users to store files in the cloud, synchronize files
+    across devices, and share files. Google Drive encompasses Google Docs,
+    Sheets and Slides, an office suite that permits collaborative editing of
+    documents, spreadsheets, presentations, drawings, forms, and more.
+  image: >-
+    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-drive-icon.png
+  imagewidth: '150'
   category: Storage
   brand: Google
-- title: Stripe
-  identifier: https://stripe.com
-  url: https://stripe.com
-  details: >-
-    Stripe is a US technology company, operating in over 25 countries, that allows both private individuals and businesses to accept payments over the Internet.
-  image: https://stripe.com/img/about/logos/logos/black.png
+- name: Stripe
+  identifier: 'https://stripe.com'
+  url: 'https://stripe.com'
+  description: >-
+    Stripe is a US technology company, operating in over 25 countries, that
+    allows both private individuals and businesses to accept payments over the
+    Internet.
+  image: 'https://stripe.com/img/about/logos/logos/black.png'
+  imagewidth: '150'
   category: Payments
   brand: Stripe
-- title: Paypal
-  identifier: https://www.paypal.com
-  url: https://www.paypal.com
-  details: >-
-    PayPal Holdings, Inc. is an American company operating a worldwide online payments system that supports online money transfers and serves as an electronic alternative to traditional paper methods like checks and money orders.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/237_logo.png
+- name: Paypal
+  identifier: 'https://www.paypal.com'
+  url: 'https://www.paypal.com'
+  description: >-
+    PayPal Holdings, Inc. is an American company operating a worldwide online
+    payments system that supports online money transfers and serves as an
+    electronic alternative to traditional paper methods like checks and money
+    orders.
+  image: >-
+    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/237_logo.png
+  imagewidth: '150'
   category: Payments
   brand: Paypal
-- title: Google Sheets
-  identifier: https://www.google.com/sheets/about/
-  url: https://www.google.com/sheets/about/
-  details: >-
-    Google Sheets is part of the Google software suite, providing an online spreadsheet application that is stored in Google Drive.
-  image: https://s3.amazonaws.com/kinlane-productions/google/google-sheets-icon.png
+- name: Google Sheets
+  identifier: 'https://www.google.com/sheets/about/'
+  url: 'https://www.google.com/sheets/about/'
+  description: >-
+    Google Sheets is part of the Google software suite, providing an online
+    spreadsheet application that is stored in Google Drive.
+  image: 'https://s3.amazonaws.com/kinlane-productions/google/google-sheets-icon.png'
+  imagewidth: '150'
   category: Spreadsheets
-  brand: Stripe
-- title: Microsoft Excel
-  identifier: https://office.microsoft.com/excel/
-  url: https://office.microsoft.com/excel/
-  details: >-
-    Microsoft Excel is a spreadsheet developed by Microsoft for Windows, macOS, Android and iOS. It features calculation, graphing tools, pivot tables, and a macro programming language called Visual Basic for Applications.
-  image: https://s3.amazonaws.com/kinlane-productions/microsoft/microsoft-excel-icon.png
+  brand: Google
+- name: Microsoft Excel
+  identifier: 'https://office.microsoft.com/excel/'
+  url: 'https://office.microsoft.com/excel/'
+  description: >-
+    Microsoft Excel is a spreadsheet developed by Microsoft for Windows, macOS,
+    Android and iOS. It features calculation, graphing tools, pivot tables, and
+    a macro programming language called Visual Basic for Applications.
+  image: >-
+    https://s3.amazonaws.com/kinlane-productions/microsoft/microsoft-excel-icon.png
+  imagewidth: '150'
   category: Spreadsheets
   brand: Microsoft
