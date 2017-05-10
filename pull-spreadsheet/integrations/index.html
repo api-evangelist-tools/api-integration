@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Update
+title: Update Integrations Spreadsheet
 ---
 <h1>Update</h1>
 <script type="text/javascript">
@@ -29,12 +29,12 @@ title: Update
     // Grab the token from cookie
     $oAuthToken = Cookies.get('token');
 
-    key = "15jtjyQivmgMohiKiUcnyJCsN48lk97suR8QfPFJd9ak";
+    key = "{{ site.integration_spreadsheet_key }}";
 
     $(document).ready( function() {
       Tabletop.init( { key: key,
                        callback: showInfo,
-                       wanted: [ "Implementations" ],
+                       wanted: [ "integrations" ],
                        debug: true } )
     })
 
@@ -48,34 +48,33 @@ title: Update
         $("#table_info").append("<p>" + sheet.name + " has " + sheet.column_names.join(", ") + "</p>");
       });
 
-      $product = tabletop.sheets("Implementations").all();
+      $product = tabletop.sheets("integrations").all();
 
       $count = 0;
       $total_count = $product.length;
-      $.each( tabletop.sheets("Implementations").all(), function(i, service) {
+      $.each( tabletop.sheets("integrations").all(), function(i, service) {
 
-          $title = service['Title'];
-          $description = service['Description'];
+          // Make this dynamic from schema
+
+          $title = service['name'];
+          $description = service['identifier'];
           $description = String($description.trim());
           $description = $description.replace(/[^\x00-\xFF]/g, "");
-          $url = service['URL'];
-          $image = service['Image'];
-          $orgs = service['Orgs'];
-          $type = service['Type'];
-          $tags = service['Tags'];
-          $license = service['License'];
-          $license_url = service['License URL'];
+          $url = service['url'];
+          $image = service['description'];
+          $orgs = service['image'];
+          $type = service['category'];
+          $tags = service['brand'];
 
           $p = {};
-          $p['title'] = $title;
-          $p['details'] = $description;
+          $p['name'] = $title;
+          $p['identifier'] = $description;
           $p['url'] = $url;
-          $p['image'] = $image;
-          $p['orgs'] = $orgs;
-          $p['type'] = $type;
-          $p['tags'] = $tags;
-          $p['license'] = $license;
-          $p['license_url'] = $license_url;
+          $p['description'] = $image;
+          $p['image'] = $orgs;
+          $p['category'] = $type;
+          $p['brand'] = $tags;
+
           $products.push($p);
           //beautify(jsonStr);
 
@@ -99,7 +98,7 @@ title: Update
 
               $.each(tree, function(treeKey, treeValue) {
 
-                $writepath = '_data/tools.yaml';
+                $writepath = '_data/integrations.yaml';
                 $path = treeValue['path'];
                 $sha = treeValue['sha'];
               //  console.log($path + ' == ' + $writepath);

@@ -1,9 +1,9 @@
 Swagger: "2.0"
 info:
-  title: OpenAPI Toolbox API
-  description: Machine readable access to the code and definitions in the OpenAPI Toolbox.
+  title: API Integrations
+  description: Machine readable access to the API integrations available.
   version: 1.0.0
-host: openapi.toolbox.apievangelist.com
+host: api.integration.integration.apievangelist.com
 basePath: /apis
 schemes:
   - http
@@ -12,212 +12,101 @@ produces:
 consumes:
   - application/json
 paths:
-  /tools:
+  /integrations/:
     get:
-      summary: Get Tools
-      description: Returns all the tools in the toolbox.
+      summary: Get Integrations
+      description: Returns all the integrations on this platform..
       responses:
         200:
           description: Successful Response
           schema:
             type: array
             items:
-              $ref: '#/definitions/tool'
+              $ref: '#/definitions/integration'
       tags:
-        - Tools
-        - OpenAPI
-  /tools/clients:
+        - Integrations
+        - API
+  /integrations/social/:
     get:
-      summary: Get All Client Tools
-      description: Returns all the client tools in the toolbox.
+      summary: Get All Social Integrations
+      description: Returns all the social integrations on this platform..
       responses:
         200:
           description: Successful Response
           schema:
             type: array
             items:
-              $ref: '#/definitions/tool'
+              $ref: '#/definitions/integration'
       tags:
-        - Tools
-        - OpenAPI
-        - Clients
-  /tools/documentation:
+        - Integrations
+        - API
+        - Social
+  /integrations/storage/:
     get:
-      summary: Get Documentation Tools
-      description: Returns all the documentation tools in the toolbox.
+      summary: Get Storage Integrations
+      description: Returns all the storage integrations on this platform..
       responses:
         200:
           description: Successful Response
           schema:
             type: array
             items:
-              $ref: '#/definitions/tool'
+              $ref: '#/definitions/integration'
       tags:
-        - Tools
-        - OpenAPI
-        - Documentation
-  /tools/editors/:
+        - Integrations
+        - API
+        - Storage
+  /integrations/payments/:
     get:
-      summary: Get Editor Tools
-      description: Returns all the editor tools in the toolbox.
+      summary: Get Payment Integrations
+      description: Returns all the payment integrations on this platform..
       responses:
         200:
           description: Successful Response
           schema:
             type: array
             items:
-              $ref: '#/definitions/tool'
+              $ref: '#/definitions/integration'
       tags:
-        - Tools
-        - OpenAPI
-        - Editors
-  /tools/generators/:
+        - Integrations
+        - API
+        - Payments
+  /integrations/spreadsheets/:
     get:
-      summary: Get Generator Tools
-      description: Returns all the generator tools in the toolbox.
+      summary: Get Spreadsheet Integrations
+      description: Returns all the spreadsheet integrations on this platform..
       responses:
         200:
           description: Successful Response
           schema:
             type: array
             items:
-              $ref: '#/definitions/tool'
+              $ref: '#/definitions/integration'
       tags:
-        - Tools
-        - OpenAPI
-        - Generators
-  /tools/java:
-    get:
-      summary: Get Java Tools
-      description: Returns all the Java tools in the toolbox.
-      responses:
-        200:
-          description: Successful Response
-          schema:
-            type: array
-            items:
-              $ref: '#/definitions/tool'
-      tags:
-        - Tools
-        - OpenAPI
-        - Java
-  /tools/javascript/:
-    get:
-      summary: Get JavaScript Tools
-      description: Returns all the JavaScript tools in the toolbox.
-      responses:
-        200:
-          description: Successful Response
-          schema:
-            type: array
-            items:
-              $ref: '#/definitions/tool'
-      tags:
-        - Tools
-        - OpenAPI
-        - JavaScript
-  /tools/nodejs/:
-    get:
-      summary: Get Node.js Tools
-      description: Returns all the Node.js tools in the toolbox.
-      responses:
-        200:
-          description: Successful Response
-          schema:
-            type: array
-            items:
-              $ref: '#/definitions/tool'
-      tags:
-        - Tools
-        - OpenAPI
-        - Node.js
-  /tools/php/:
-    get:
-      summary: Get PHP Tools
-      description: Returns all the PHP tools in the toolbox.
-      responses:
-        200:
-          description: Successful Response
-          schema:
-            type: array
-            items:
-              $ref: '#/definitions/tool'
-      tags:
-        - Tools
-        - OpenAPI
-        - PHP
-  /tools/python/:
-    get:
-      summary: Get Python Tools
-      description: Returns all the Python tools in the toolbox.
-      responses:
-        200:
-          description: Successful Response
-          schema:
-            type: array
-            items:
-              $ref: '#/definitions/tool'
-      tags:
-        - Tools
-        - OpenAPI
-        - Python
-  /tools/ruby/:
-    get:
-      summary: Get Ruby Tools
-      description: Returns all the ruby tools in the toolbox.
-      responses:
-        200:
-          description: Successful Response
-          schema:
-            type: array
-            items:
-              $ref: '#/definitions/tool'
-      tags:
-        - Tools
-        - OpenAPI
-        - Ruby
-  /tools/servers/:
-    get:
-      summary: Get Server Tools
-      description: Returns all the server tools in the toolbox.
-      responses:
-        200:
-          description: Successful Response
-          schema:
-            type: array
-            items:
-              $ref: '#/definitions/tool'
-      tags:
-        - Tools
-        - OpenAPI
-        - Servers
+        - Integrations
+        - API
+        - Spreadsheets
 definitions:
-  tool:
+  integration:
     properties:
-      title:
-        description: The title of the tool.
+      name:
+        description: The name of the API integration.
         type: string
-      details:
-        description: The details for the tool.
+      identifier:
+        description: A unique identiefer for the API integration.
         type: string
       url:
-        description: A URL to find more information on tool.
+        description: A URL to find more information about integration.
+        type: string
+      description:
+        description: A descripton of the integration.
         type: string
       image:
-        description: An image to represent the tool.
+        description: An image representation for an integration.
         type: string
-      orgs:
-        description: The organization or entity behind the tool.
+      category:
+        description: A category for the integration.
         type: string
-      type:
-        description: The type of tool.
-        type: string
-      tags:
-        description: Comma separated list of tags applying to tool.
-        type: string
-      license:
-        description: The license name for the tool.
-        type: string
-      license_url:
-        description: The url for the tool license.
+      brand:
+        description: A brand associated with the integration.
         type: string

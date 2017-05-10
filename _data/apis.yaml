@@ -1,5 +1,5 @@
-name: OpenAPI Toolbox
-description: This is an toolbox of code and definitions that are developed using the OpenAPI specification.
+name: API Integrations
+description: A sample API integration page showing other integrations available with an API.
 image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-tools.png
 tags:
   - OpenAPI
@@ -30,11 +30,11 @@ apis:
         url: https://raw.githubusercontent.com/kinlane/openapi-toolbox/master/_data/openapi.yaml
 x-common:
   - type: x-support
-    url: https://github.com/kinlane/openapi-toolbox/issues
+    url: https://github.com/api-evangelist-tools/api-integration/issues
   - type: x-documentation
-    url: http://openapi.toolbox.apievangelist.com/api-documentation/
+    url: http://api.integration.tool.apievangelist.com/documentation/
   - type: x-github-repo
-    url: https://github.com/kinlane/openapi-toolbox
+    url: https://github.com/api-evangelist-tools/api-integration
   - type: x-google-sheet
     url: https://docs.google.com/spreadsheets/d/15jtjyQivmgMohiKiUcnyJCsN48lk97suR8QfPFJd9ak/pubhtml
 include: []
