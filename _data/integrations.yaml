@@ -5,7 +5,7 @@
     Twitter is an online news and social networking service where users post and
     interact with messages, tweets, restricted to 140 characters.
   image: 'http://api.integration.tool.apievangelist.com/images/twitter-icon.png'
-  imagewidth: '125'
+  imagewidth: '175'
   category: Social
   brand: Twitter
 - name: Facebook
@@ -15,7 +15,7 @@
     Facebook is an American for-profit corporation and an online social media
     and social networking service based in Menlo Park, California.
   image: 'http://api.integration.tool.apievangelist.com/images/facebook-icon.png'
-  imagewidth: '150'
+  imagewidth: '100'
   category: Social
   brand: Facebook
 - name: Dropbox
@@ -25,7 +25,7 @@
     Dropbox simplifies the way you create, share and collaborate. Bring your
     photos, docs, and videos anywhere and keep your files safe.
   image: 'http://api.integration.tool.apievangelist.com/images/dropbox-icon.png'
-  imagewidth: '150'
+  imagewidth: '175'
   category: Storage
   brand: Dropbox
 - name: Google Drive
@@ -61,7 +61,7 @@
     electronic alternative to traditional paper methods like checks and money
     orders.
   image: 'http://api.integration.tool.apievangelist.com/images/paypal-icon.png'
-  imagewidth: '150'
+  imagewidth: '125'
   category: Payments
   brand: Paypal
 - name: Google Sheets
@@ -83,6 +83,6 @@
     Android and iOS. It features calculation, graphing tools, pivot tables, and
     a macro programming language called Visual Basic for Applications.
   image: 'http://api.integration.tool.apievangelist.com/images/excel-icon.png'
-  imagewidth: '150'
+  imagewidth: '125'
   category: Spreadsheets
   brand: Microsoft
