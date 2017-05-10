@@ -4,8 +4,7 @@
   description: >-
     Twitter is an online news and social networking service where users post and
     interact with messages, tweets, restricted to 140 characters.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/266_logo.png
+  image: 'http://api.integration.tool.apievangelist.com/twitter-icon.png'
   imagewidth: '125'
   category: Social
   brand: Twitter
@@ -15,8 +14,7 @@
   description: >-
     Facebook is an American for-profit corporation and an online social media
     and social networking service based in Menlo Park, California.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Facebook.png
+  image: 'http://api.integration.tool.apievangelist.com/facebook-icon.png'
   imagewidth: '150'
   category: Social
   brand: Facebook
@@ -26,8 +24,7 @@
   description: >-
     Dropbox simplifies the way you create, share and collaborate. Bring your
     photos, docs, and videos anywhere and keep your files safe.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/DropboxSlackbotDropboxSlackbot.png
+  image: 'http://api.integration.tool.apievangelist.com/dropbox-icon.png'
   imagewidth: '150'
   category: Storage
   brand: Dropbox
@@ -40,8 +37,7 @@
     across devices, and share files. Google Drive encompasses Google Docs,
     Sheets and Slides, an office suite that permits collaborative editing of
     documents, spreadsheets, presentations, drawings, forms, and more.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-drive-icon.png
+  image: 'http://api.integration.tool.apievangelist.com/google-drive-icon.png'
   imagewidth: '150'
   category: Storage
   brand: Google
@@ -52,7 +48,7 @@
     Stripe is a US technology company, operating in over 25 countries, that
     allows both private individuals and businesses to accept payments over the
     Internet.
-  image: 'https://stripe.com/img/about/logos/logos/black.png'
+  image: 'http://api.integration.tool.apievangelist.com/stripe-icon.png'
   imagewidth: '150'
   category: Payments
   brand: Stripe
@@ -64,8 +60,7 @@
     payments system that supports online money transfers and serves as an
     electronic alternative to traditional paper methods like checks and money
     orders.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/237_logo.png
+  image: 'http://api.integration.tool.apievangelist.com/paypal-icon.png'
   imagewidth: '150'
   category: Payments
   brand: Paypal
@@ -75,7 +70,7 @@
   description: >-
     Google Sheets is part of the Google software suite, providing an online
     spreadsheet application that is stored in Google Drive.
-  image: 'https://s3.amazonaws.com/kinlane-productions/google/google-sheets-icon.png'
+  image: 'http://api.integration.tool.apievangelist.com/google-spreadsheet-icon.png'
   imagewidth: '150'
   category: Spreadsheets
   brand: Google
@@ -86,8 +81,7 @@
     Microsoft Excel is a spreadsheet developed by Microsoft for Windows, macOS,
     Android and iOS. It features calculation, graphing tools, pivot tables, and
     a macro programming language called Visual Basic for Applications.
-  image: >-
-    https://s3.amazonaws.com/kinlane-productions/microsoft/microsoft-excel-icon.png
+  image: 'http://api.integration.tool.apievangelist.com/excel-icon.png'
   imagewidth: '150'
   category: Spreadsheets
   brand: Microsoft
