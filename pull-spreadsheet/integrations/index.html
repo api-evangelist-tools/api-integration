@@ -56,24 +56,26 @@ title: Update Integrations Spreadsheet
 
           // Make this dynamic from schema
 
-          $title = service['name'];
-          $description = service['identifier'];
+          $name = service['name'];
+          $identifier = service['identifier'];
+          $url = service['url'];
+          $description = service['description'];
           $description = String($description.trim());
           $description = $description.replace(/[^\x00-\xFF]/g, "");
-          $url = service['url'];
-          $image = service['description'];
-          $orgs = service['image'];
-          $type = service['category'];
-          $tags = service['brand'];
+          $image = service['image'];
+          $imagewidth = service['imagewidth'];
+          $category = service['category'];
+          $brand = service['brand'];
 
           $p = {};
-          $p['name'] = $title;
-          $p['identifier'] = $description;
+          $p['name'] = $name;
+          $p['identifier'] = $identifier;
           $p['url'] = $url;
-          $p['description'] = $image;
-          $p['image'] = $orgs;
-          $p['category'] = $type;
-          $p['brand'] = $tags;
+          $p['description'] = $description;
+          $p['image'] = $image;
+          $p['imagewidth'] = $imagewidth;
+          $p['category'] = $category;
+          $p['brand'] = $brand;
 
           $products.push($p);
           //beautify(jsonStr);
