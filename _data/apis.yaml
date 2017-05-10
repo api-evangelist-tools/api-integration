@@ -14,8 +14,9 @@ apis:
     image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-integration-automation.png
     humanURL: http://api.integration.tool.apievangelist.com/
     baseURL: http://openapi.toolbox.apievangelist.com/
-  - API
-  - Integrations
+    tags:
+      - API
+      - Integrations
     properties:
       - type: x-openapi
         url: https://raw.githubusercontent.com/api-evangelist-tools/api-integration/master/_data/openapi.yaml
