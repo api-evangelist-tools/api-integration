@@ -8,6 +8,7 @@ title: API Integrations
 <p>Here are the sample integrations listing page showing what is possible:</p>
 <table cellpadding="3" cellspacing="2">
 {% for tool in site.data.integrations %}
+{{ tool }}
     <tr>
       <td width="175" valign="top">
         <img src="{{ tool.image }}" align="left" width="{{ tool.imagewidth }}" style="padding: 15px;" />
