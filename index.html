@@ -9,7 +9,9 @@ title: API Integrations
 <table cellpadding="3" cellspacing="2">
 {% for tool in site.data.integrations %}
     <tr>
-      <td width="125" valign="top"><img src="{{ tool.image }}" align="left" width="125" style="padding: 15px;" /></td>
+      <td width="175" valign="top">
+        <img src="{{ tool.image }}" align="left" width="175" style="padding: 15px;" />
+      </td>
       <td style="padding: 10px;" valign="top">
         <p><a href="{{ tool.url }}"><strong>{{ tool.title }}</strong></a> - {{ tool.details }}</p>
       </td>
@@ -22,10 +24,11 @@ title: API Integrations
       </td>
       <td align="left">
         <p><a href="{{ tool.url }}" target="_blank">{{ tool.url }}</a></p>
-        <p>{{ tootle.category }}</p>
-        <p>{{ tootle.brand }}</p>
+        <p>{{ tool.category }}</p>
+        <p>{{ tool.brand }}</p>
       </td>
     </tr>
+    <tr><td><hr /></td></tr>
 {% endfor %}
 </table>
 <p>This project is <a href="https://github.com/kinlane/openapi-toolbox">forkable using the Github repository</a>, and <a href="/data/tools.json">accessible as JSON</a>. If you have a tool you think should be added, or there is something that needs fixing, <a href="https://github.com/kinlane/openapi-toolbox/issues">you can submit an issue on the Github repository</a>, or submit a pull request.</p>
