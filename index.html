@@ -11,14 +11,19 @@ title: OpenAPI Toolbox
     <tr>
       <td width="125" valign="top"><img src="{{ tool.image }}" align="left" width="125" style="padding: 15px;" /></td>
       <td style="padding: 10px;" valign="top">
-        <p><a href="{{ tool.url }}"><strong>{{ tool.title }}</strong></a><br />
-        {{ tool.details }}</p>
-        <ul>
-          <li><strong>URL:</strong> <a href="{{ tool.url }}" target="_blank">Visit</a></li>
-        </ul>
-        <p align="center"><strong>Category:</strong> {{ tootle.category }}</p>
-        <p align="center"><strong>Brand:</strong> {{ tootle.brand }}</p>
-        <hr style="width: 75%; text-align:left;" />
+        <p><a href="{{ tool.url }}"><strong>{{ tool.title }}</strong></a> - {{ tool.details }}</p>
+      </td>
+    </tr>
+    <tr>
+      <td align="right">
+        <p><strong>URL:</strong></p>
+        <p><strong>Category:</strong></p>
+        <p><strong>Brand:</strong></p>
+      </td>
+      <td align="left">
+        <p><a href="{{ tool.url }}" target="_blank">{{ tool.url }}</a></p>
+        <p>{{ tootle.category }}</p>
+        <p>{{ tootle.brand }}</p>
       </td>
     </tr>
 {% endfor %}
