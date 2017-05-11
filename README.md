@@ -13,3 +13,5 @@ While the integrations YAML data is stored in <a href="https://github.com/api-ev
 While not 100% documented, this site is meant to be forked, and reskinned with your own graphical website look, and managed with your own data, showing what integrations are available for your API platform. You can add a subdomain to the cname for the Github repo, making it a standalone API integration page that matches the rest of your API website or portal.
 
 If you have any questions, or would like me to deploy an API integration page for your API, you can submit <a href="https://github.com/{{ site.github_user }}/{{ site.github_repo }}/issues">a Github Issue for the project</a>, and I'll get back to you with more information.
+
+Project Website: http://api.integration.tool.apievangelist.com/
