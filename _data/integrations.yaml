@@ -5,7 +5,7 @@
     Twitter is an online news and social networking service where users post and
     interact with messages, tweets, restricted to 140 characters.
   image: 'http://api.integration.tool.apievangelist.com/images/twitter-icon.png'
-  imagewidth: '150'
+  imagewidth: '175'
   category: Social
   brand: Twitter
 - name: Facebook
@@ -15,7 +15,7 @@
     Facebook is an American for-profit corporation and an online social media
     and social networking service based in Menlo Park, California.
   image: 'http://api.integration.tool.apievangelist.com/images/facebook-icon.png'
-  imagewidth: '150'
+  imagewidth: '125'
   category: Social
   brand: Facebook
 - name: Dropbox
