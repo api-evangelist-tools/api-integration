@@ -72,7 +72,7 @@
     spreadsheet application that is stored in Google Drive.
   image: >-
     http://api.integration.tool.apievangelist.com/images/google-spreadsheet-icon.png
-  imagewidth: '150'
+  imagewidth: '135'
   category: Spreadsheets
   brand: Google
 - name: Microsoft Excel
