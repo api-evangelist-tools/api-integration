@@ -38,7 +38,7 @@
     Sheets and Slides, an office suite that permits collaborative editing of
     documents, spreadsheets, presentations, drawings, forms, and more.
   image: 'http://api.integration.tool.apievangelist.com/images/google-drive-icon.png'
-  imagewidth: '150'
+  imagewidth: '140'
   category: Storage
   brand: Google
 - name: Stripe
