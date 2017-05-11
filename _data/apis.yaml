@@ -1,5 +1,5 @@
 name: API Integrations
-description: A sample API integration page showing other integrations available with an API.
+description: This is an API providing machine readable access to the integrations that are available via this platform.
 image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-tools.png
 tags:
   - API
