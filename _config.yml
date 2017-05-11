@@ -26,7 +26,7 @@ imagesecure : https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shir
 feature_title: API Definition Guide
 feature_link: http://definitions.apievangelist.com/guide/
 feature_image_source: http://kinlane-productions.s3.amazonaws.com/api_evangelist_site/blog/api_definitions_2017_03.png
-feature_image_width: 45
+feature_image_width: 50
 
 # Footer
 footer_title: API Evangelist
