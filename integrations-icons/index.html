@@ -1,12 +1,12 @@
 ---
 layout: default
-title: API Integrations
+title: API Integrations (Icons)
 ---
 
-<h1>API Integrations</h1>
+<h1>API Integrations (Icons)</h1>
 <p>This is a sample data driven API integrations page that is hosted on Github, making it something that any API provider can fork and easily put to use, showing the possible integrations with other APIs available when you use their APIs.</p>
 <p>Here are the sample integrations listing page showing what is possible:</p>
-<table cellpadding="3" cellspacing="2" width="90%" style="padding-left: 25px;">
+<table cellpadding="3" cellspacing="2" style="margin-top: 10px;">
 {% assign toggle = 0 %}
 {% for tool in site.data.integrations %}
     {% if toggle == 0 %}
@@ -25,4 +25,9 @@ title: API Integrations
     {% endif %}
 {% endfor %}
 </table>
-<p>This project is <a href="https://github.com/kinlane/openapi-toolbox">forkable using the Github repository</a>, and <a href="/data/tools.json">accessible as JSON</a>. If you have a tool you think should be added, or there is something that needs fixing, <a href="https://github.com/kinlane/openapi-toolbox/issues">you can submit an issue on the Github repository</a>, or submit a pull request.</p>
+<p>This project is <a href="https://github.com/{{ site.github_user }}/{{ site.github_repo }}">forkable using the Github repository</a>, and will run on any site using Jekyll, which makes Github Pages a very suitable place to run data and API driven solutions like this.</p>
+<p>there are two API integrations pages available here, <a href="http://api.integration.tool.apievangelist.com/">one for a detailed listing</a>, and <a href="http://api.integration.tool.apievangelist.com/integrations-icons/">another for a more icon based listing</a>. Both use Liquid to access the YAML integrations data store in the _data folder for the project.</p>
+<p>In addition to human listing pages, that can run in any API website or portal, there is an API available for accessing API integrations in a machine-readable way. I provide endpoints for filtering by category, and will be adding other endpoints in future versions.</p>
+<p>While the integrations YAML data is stored in the _data folder within the Github repository for this site, the data is managed via the Google Spreadsheet, and synced by running the pull spreadsheet script for integrations with a valid Github OAuth token--when successful, it updates the YAML data store with the latest data.</p>
+<p>While not 100% documented, this site is meant to be forked, and reskinned with your own graphical website look, and managed with your own data, showing what integrations are available for your API platform. You can add a subdomain to the cname for the Github repo, making it a standalone API integration page that matchs the rest of your API website or portal.</p>
+<p>If you have any questions, or would like me to deploy an API integration page for your API, you can submit <a href="https://github.com/{{ site.github_user }}/{{ site.github_repo }}/issues">a Github Issue for the project</a>, and I'll get back to you with more information.</p>
