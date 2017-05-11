@@ -3,7 +3,7 @@ info:
   title: API Integrations
   description: Machine readable access to the API integrations available.
   version: 1.0.0
-host: api.integration.integration.apievangelist.com
+host: api.integration.tool.apievangelist.com
 basePath: /apis
 schemes:
   - http
@@ -104,9 +104,9 @@ definitions:
       image:
         description: An image representation for an integration.
         type: string
-      image:
+      imagewidth:
         description: An image width for the integration.
-        type: integer        
+        type: integer
       category:
         description: A category for the integration.
         type: string

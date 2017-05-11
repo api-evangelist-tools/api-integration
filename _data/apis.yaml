@@ -13,7 +13,7 @@ apis:
     description: Machine readable access to the API integrations available via this platform.
     image: https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-integration-automation.png
     humanURL: http://api.integration.tool.apievangelist.com/
-    baseURL: http://openapi.toolbox.apievangelist.com/
+    baseURL: http://api.integration.tool.apievangelist.com/
     tags:
       - API
       - Integrations
