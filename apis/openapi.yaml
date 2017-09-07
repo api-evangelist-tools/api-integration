@@ -9,6 +9,7 @@ layout: none
     {% assign categorylist = categorylist | append:',' | append: category %}
   {% endif %}
 {% endfor %}
+--{{ categorylist }}--
 {% assign categoryArray = categorylist | split: "," %}
 swagger: 2.0
 info:
@@ -40,10 +41,10 @@ paths:{% for path in categoryArray %}
             items:
               $ref: "{{ site.resource }}
       tags:
-        - {{ path | capitalize }}{% endfor %}
+        - {{ path | capitalize }}{% endfor %}{% endfor %}
 definitions:
   {{ site.resource }}:
     properties:{% for integration in site.data.integrations %}
       {{ integration[0] }}:
         description: 'IDK'
-        type: string{% endfor %}{% endfor %}
+        type: string{% endfor %}
