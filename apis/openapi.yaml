@@ -9,6 +9,7 @@ layout: none
   {% if categorylist contains category %}
   {% else %}
     {% assign categorylist = categorylist | append:',' | append: category %}
+    --{{ categorylist }}--
   {% endif %}
 {% endfor %}
 --{{ categorylist }}--
