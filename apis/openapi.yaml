@@ -4,6 +4,7 @@ layout: none
 {% for integration in site.data.integrations %}
   {% assign categorylist = '' %}
   {% assign category = integration.category | downcase %}
+  --{{ category }}--
   {% if categorylist contains category %}
   {% else %}
     {% assign categorylist = categorylist | append:',' | append: category %}
