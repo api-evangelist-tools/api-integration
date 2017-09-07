@@ -1,8 +1,0 @@
----
-layout: none
----
-{% for integration in site.data.integrations %}
-  {% for i in integration %}
-    {{ i }}: {{ integration[i] }}<br />
-  {% endfor %}
-{% endfor %}

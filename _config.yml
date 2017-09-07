@@ -7,6 +7,8 @@ version:      1.1.1
 author:
   name:       'Kin Lane'
   email:      'info@apievangelist.com'
+  url:        'http://apievangelist.com'
+  twitter:    'apievangelist'
 markdown:     kramdown
 permalink:    pretty
 pygments:     true

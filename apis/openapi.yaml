@@ -1,0 +1,49 @@
+---
+layout: none
+---
+{% for integration in site.data.integrations %}
+  {% assign categorylist = '' %}
+  {% assign category = integration.category | downcase %}
+  {% if categorylist contains category %}
+  {% else %}
+    {% assign categorylist = categorylist | append:',' | append: tag %}
+  {% endif %}
+{% endfor %}
+{% assign categoryArray = categorylist | split: "," %}
+swagger: 2.0
+info:
+  title: {{ site.title }}
+  description: {{ site.description }}
+  termsOfService: {{ site.url }}/terms-of-service/
+  contact:
+    name: {{ site.author.name }}
+    url: {{ site.author.url }}
+    email: {{ site.author.email }}
+  version: {{ site.version }}
+host: {{ site.url }}
+basePath: /apis/{{ site.resource }}
+schemes:
+ - http
+produces:
+ - application/json
+paths:{% for path in categoryArray %}
+  {{ path }}:
+    get:
+      summary: {{ path | capitalize }}
+      description: This is a list of {{ path }} data.
+      operationId: get{{ path | capitalize }}
+      responses:{% for response in verb[1].responses %}
+        '200':
+          description: A succesful {{ path }} response.
+          schema:
+            type: array
+            items:
+              $ref: "{{ site.resource }}
+      tags:
+        - {{ path | capitalize }}{% endfor %}
+definitions:
+  {{ site.resource }}:
+    properties:{% for integration in site.data.integrations %}
+      {{ integration[0] }}:
+        description: 'IDK'
+        type: string{% endfor %}
