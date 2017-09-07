@@ -46,7 +46,7 @@ definitions:
   {{ site.api_resource }}:
     properties:{% for i in site.data.integrations[1] %}
       {% if i[0] contains '1' or i[0] contains '2' or i[0] contains '3' or i[0] contains '4' or i[0] contains '5' or i[0] contains '6' or i[0] contains '7' or i[0] contains '8' or i[0] contains '9' %}
-        NUMBE!
+        NUMBER!
       {% endif %}
       {{ i[0] }}:
         test: {{ var1 }}
