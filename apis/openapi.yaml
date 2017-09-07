@@ -44,7 +44,7 @@ paths:{% for path in categoryArray %}{% if path != '' %}
         - {{ path | capitalize }}{% endif %}{% endfor %}
 definitions:
   {{ site.api_resource }}:
-    properties:{% for i in site.data.integrations[1] %}
+    properties:{% for i in site.data.integrations[1] %}{% capture test_type %}{{ i[1] | json }}{% endcapture %}
       {{ i[0] }}:
         description: 'The {{ i[0] }} for {{ site.api_resource }}.'
-        type: string{% endfor %}
+        type: {% if test_type contains '"' %}string{% else %}number{% endif %}{% endfor %}
