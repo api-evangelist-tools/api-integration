@@ -1,7 +1,7 @@
 ---
 layout: none
 ---
-swagger: 2.0{% assign categorylist = '' %}{% for integration in site.data.integrations %}{% assign category = integration.category | downcase %}{% if categorylist contains category %}{% else %}{% assign categorylist = categorylist | append:',' | append: category %}{% endif %}{% endfor %}{% assign categoryArray = categorylist | split: "," %}
+swagger: "2.0"{% assign categorylist = '' %}{% for integration in site.data.integrations %}{% assign category = integration.category | downcase %}{% if categorylist contains category %}{% else %}{% assign categorylist = categorylist | append:',' | append: category %}{% endif %}{% endfor %}{% assign categoryArray = categorylist | split: "," %}
 info:
   title: {{ site.title }}
   description: {{ site.description }}
