@@ -1,16 +1,12 @@
 ---
 layout: none
 ---
+{% assign categorylist = '' %}
 {% for integration in site.data.integrations %}
-  --{{ integration.category }}--
-  {% assign categorylist = '' %}
   {% assign category = integration.category | downcase %}
-  --{{ category }}--
   {% if categorylist contains category %}
   {% else %}
-    {% assign categorylist = categorylist | append:',' %}
-    {% assign categorylist = categorylist | append: category %}
-    --{{ categorylist }}--
+    {% assign categorylist = categorylist | append:',' | append: category %}
   {% endif %}
 {% endfor %}
 --{{ categorylist }}--
