@@ -9,6 +9,7 @@ layout: none
     {% assign categorylist = categorylist | append:',' | append: tag %}
   {% endif %}
 {% endfor %}
+--{{ categorylist }}--
 {% assign categoryArray = categorylist | split: "," %}
 swagger: 2.0
 info:
