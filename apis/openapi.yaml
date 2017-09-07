@@ -45,8 +45,7 @@ paths:{% for path in categoryArray %}{% if path != '' %}
 definitions:
   {{ site.api_resource }}:
     properties:{% for i in site.data.integrations[1] %}
-    {% assign var1 = i[1] %}
-    {% capture test_type %}{{ var1 | json }}{% endcapture %}
+    {% assign var1 = i[1] | json }
       {{ i[0] }}:
         test: {{ test_type }}
         description: 'The {{ i[0] }} for {{ site.api_resource }} - {{ i[1] }}'
