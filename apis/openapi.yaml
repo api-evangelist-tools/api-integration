@@ -49,6 +49,6 @@ definitions:
         NUMBER!
       {% endif %}
       {{ i[0] }}:
-        test: {{ var1 }}
-        description: 'The {{ i[0] }} for {{ site.api_resource }} - {{ i[1] }}'
+        test1: {{ i[1] }}
+        description: 'The {{ i[0] }} for {{ site.api_resource }}'
         type: {% if test_type contains '"' %}string{% else %}number{% endif %}{% endfor %}
