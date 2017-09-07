@@ -2,15 +2,13 @@
 layout: none
 ---
 {% for integration in site.data.integrations %}
---{{ integration.category }}--
   {% assign categorylist = '' %}
   {% assign category = integration.category | downcase %}
   {% if categorylist contains category %}
   {% else %}
-    {% assign categorylist = categorylist | append:',' | append: tag %}
+    {% assign categorylist = categorylist | append:',' | append: category %}
   {% endif %}
 {% endfor %}
---{{ categorylist }}--
 {% assign categoryArray = categorylist | split: "," %}
 swagger: 2.0
 info:
