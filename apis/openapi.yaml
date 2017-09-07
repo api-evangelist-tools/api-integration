@@ -45,10 +45,10 @@ paths:{% for path in categoryArray %}{% if path != '' %}
 definitions:
   {{ site.api_resource }}:
     properties:{% for i in site.data.integrations[1] %}
-    {% assign var1 = i | json %}
-    {% capture test_var1 %}{{ i[1] | json }}{% endcapture %}
+      {% if i[0] contains '1' or i[0] contains '2' or i[0] contains '3' %}
+
+      {% endif %}
       {{ i[0] }}:
         test: {{ var1 }}
-        test2: {{ test_var1 }}
         description: 'The {{ i[0] }} for {{ site.api_resource }} - {{ i[1] }}'
         type: {% if test_type contains '"' %}string{% else %}number{% endif %}{% endfor %}
