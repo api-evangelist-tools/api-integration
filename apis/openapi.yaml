@@ -47,6 +47,6 @@ definitions:
     properties:{% for i in site.data.integrations[1] %}
     {% assign var1 = i[1] | json %}
       {{ i[0] }}:
-        test: {{ test_type }}
+        test: {{ var1 }}
         description: 'The {{ i[0] }} for {{ site.api_resource }} - {{ i[1] }}'
         type: {% if test_type contains '"' %}string{% else %}number{% endif %}{% endfor %}
