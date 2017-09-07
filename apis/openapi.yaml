@@ -46,4 +46,4 @@ definitions:
     properties:{% for integration in site.data.integrations %}
       {{ integration[0] }}:
         description: 'IDK'
-        type: string{% endfor %}
+        type: string{% endfor %}{% endfor %}
