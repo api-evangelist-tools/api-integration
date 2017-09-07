@@ -22,7 +22,7 @@ info:
     email: {{ site.author.email }}
   version: {{ site.version }}
 host: {{ site.url }}
-basePath: /apis/{{ site.resource }}
+basePath: /apis/{{ site.api_resource }}
 schemes:
  - http
 produces:
@@ -39,12 +39,12 @@ paths:{% for path in categoryArray %}{% if path != '' %}
           schema:
             type: array
             items:
-              $ref: "{{ site.resource }}
+              $ref: "#/definitions/{{ site.api_resource }}"
       tags:
         - {{ path | capitalize }}{% endif %}{% endfor %}
 definitions:
-  {{ site.resource }}:
+  {{ site.api_resource }}:
     properties:{% for i in site.data.integrations[1] %}
       {{ i[0] }}:
-        description: 'The {{ i[0] }} for {{ site.resource }}.'
+        description: 'The {{ i[0] }} for {{ site.api_resource }}.'
         type: string{% endfor %}
