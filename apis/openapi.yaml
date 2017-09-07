@@ -46,5 +46,6 @@ definitions:
   {{ site.api_resource }}:
     properties:{% for i in site.data.integrations[1] %}{% assign value = i[1] %}{% assign type = "string" %}{% if value contains 1 or value contains 2 or value contains 3 or value contains 4 or value contains 5 or value contains 6 or value contains 7 or value contains 8 or value contains 9 %}{% if value contains " " %}{% else %}{% if value contains "/" or value contains "-" %}{% assign type = "date" %}{% else %}{% assign type = "number" %}{% endif %}{% endif %}{% endif %}
       {{ i[0] }}:
+        test1: {{ i[1] }}
         description: 'The {{ i[0] }} for {{ site.api_resource }}'
-        type: {{ type }}
+        type: {{ type }}{% endfor %}
