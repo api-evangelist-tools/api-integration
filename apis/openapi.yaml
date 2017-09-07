@@ -28,7 +28,7 @@ schemes:
 produces:
  - application/json
 paths:{% for path in categoryArray %}{% if path != '' %}
-  {{ path }}:
+  /{{ path }}/:
     get:
       summary: {{ path | capitalize }}
       description: This is a list of {{ path }} data.
