@@ -12,7 +12,7 @@ info:
     email: {{ site.author.email }}
   version: {{ site.version }}
 host: {{ site.url | replace: ' http://','' | replace: ' /','' }}
-basePath: /apis/{{ site.api_resource }}
+basePath: apis/{{ site.api_resource }}
 schemes:
  - http
 produces:
