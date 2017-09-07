@@ -5,7 +5,7 @@ tags:
   - API
   - Integrations
 created: "2017-05-09"
-modified: "2017-05-09"
+modified: "2017-09-06"
 url: https://raw.githubusercontent.com/api-evangelist-tools/api-integration/master/_data/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -19,7 +19,7 @@ apis:
       - Integrations
     properties:
       - type: x-openapi
-        url: https://raw.githubusercontent.com/api-evangelist-tools/api-integration/master/_data/openapi.yaml
+        url: http://api.integration.tool.apievangelist.com/apis/openapi.yaml
 x-common:
   - type: x-support
     url: https://github.com/api-evangelist-tools/api-integration/issues
