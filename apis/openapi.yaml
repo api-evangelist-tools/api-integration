@@ -44,7 +44,7 @@ paths:{% for path in categoryArray %}{% if path != '' %}
         - {{ path | capitalize }}{% endif %}{% endfor %}
 definitions:
   {{ site.resource }}:
-    properties:{% for integration in site.data.integrations %}
-      {{ integration[0] }}:
-        description: 'IDK'
-        type: string{% endfor %}
+    properties:{% for integration in site.data.integrations %}{% for i in integration %}
+      {{ i[0] }}:
+        description: 'Need a description.'
+        type: string{% endfor %}{% endfor %}
